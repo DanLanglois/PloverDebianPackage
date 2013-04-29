@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: plover
+Version: 2.2.0
+Summary: ('Open Source Stenography Software',)
+Home-page: http://stenoknight.com/plover
+Author: Joshua Harlan Lifton
+Author-email: joshua.harlan.lifton@gmail.com
+License: GNU General Public License, version 2
+Download-URL: https://launchpad.net/plover
+Description: Plover is a free open source program intended to
+        bring realtime stenographic technology not just to stenographers, but also to
+        hackers, hobbyists, accessibility mavens, and all-around speed demons.
+Platform: GNU/Linux
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Desktop Environment
+Requires: xlib
+Requires: wx

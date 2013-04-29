@@ -1,8 +1,9 @@
 #!/usr/bin/env python2.6
 # Copyright (c) 2010 Joshua Harlan Lifton.
 # See LICENSE.txt for details.
-
-from distutils.core import setup
+import distribute_setup
+distribute_setup.use_setuptools()
+from setuptools import setup, find_packages
 from plover import __version__
 from plover import __description__
 from plover import __long_description__
@@ -27,7 +28,8 @@ setup(name='plover',
       data_files=[('/usr/share/applications', ['application/Plover.desktop']),
                   ('/usr/share/pixmaps', ['plover/assets/plover_on.png']),],
       scripts=['application/plover'],
-      requires=['serial', 'Xlib', 'wx', 'appdirs'],
+      requires=['xlib', 'wx'],
+      install_requires=['pyserial', 'appdirs', 'pywinusb'],
       platforms=['GNU/Linux'],
       classifiers=['Programming Language :: Python',
                    'License :: OSI Approved :: GNU General Public License (GPL)',
